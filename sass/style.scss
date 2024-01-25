@@ -1,0 +1,32 @@
+//Estilos de Fuente
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;500;700;900&display=swap');
+
+//Variables
+// Color de Fondo BLANCO OXFORD
+//$colorFondo: ie-hex-str($color: #F1F3F1);
+$colorFondo: white;
+// Color de Sombra
+$sombra: 0px 13px 33px 0px rgba(0,0,0,0.75);
+//Fuente 1
+$font1: 'Amiri Quran', serif;
+//Fuente 2
+$font2: 'Cairo Play', sans-serif;
+
+
+@import "inicial";
+@import "header";
+@import "footer";
+@import "mainIndex";
+@import "bodyIndex";
+@import "bootstrap";
+@import "pseudoclases";
+
+
+
+
+
+
+
+
+

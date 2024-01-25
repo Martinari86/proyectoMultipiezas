@@ -1,0 +1,19 @@
+// Estilos Header
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: $colorFondo;
+    grid-area: header;
+    -webkit-box-shadow: $sombra;
+    -moz-box-shadow: $sombra;
+    box-shadow: $sombra;
+    display: flex;
+    justify-items: center;
+}
+
+.header-navbar-container__logo{
+    width: 70px;
+    height: 90px;
+    position: relative;
+    left:130px
+}

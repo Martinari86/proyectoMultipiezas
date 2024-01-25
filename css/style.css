@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  grid-area: header;
+  -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-items: center;
+}
+
+.header-navbar-container__logo {
+  width: 70px;
+  height: 90px;
+  position: relative;
+  left: 130px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  grid-area: footer;
+  -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+.mainIndex {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.mainIndex__articulo1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.mainIndex-articulo1__logoCompleto {
+  width: 50%;
+  height: 80%;
+}
+
+.mainIndex__articulo2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 50vh);
+  grid-template-areas: "imagen1 texto2 imagen3 texto4" "texto1 imagen2 texto3 imagen4";
+}
+.mainIndex__articulo2 .mainIndex-articulo2__imagen1 {
+  grid-area: imagen1;
+  width: 100%;
+  height: 100%;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__texto1 {
+  grid-area: texto1;
+  font-family: "Amiri Quran", serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  text-align: center;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__imagen2 {
+  grid-area: imagen2;
+  width: 100%;
+  height: 100%;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__texto2 {
+  grid-area: texto2;
+  font-family: "Amiri Quran", serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  text-align: center;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__imagen3 {
+  grid-area: imagen3;
+  width: 100%;
+  height: 100%;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__texto3 {
+  grid-area: texto3;
+  font-family: "Amiri Quran", serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  text-align: center;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__imagen4 {
+  grid-area: imagen4;
+  width: 100%;
+  height: 100%;
+}
+.mainIndex__articulo2 .mainIndex-articulo2__texto4 {
+  grid-area: texto4;
+  font-family: "Amiri Quran", serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%;
+  text-align: center;
+}
+
+.mainIndex__articulo3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorTextos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.mainIndex__articulo4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50vh;
+  grid-template-areas: "tarjeta1 tarjeta2";
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor1 {
+  grid-area: tarjeta1;
+  display: flex;
+  flex-direction: row;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__imagenTarjeta1 {
+  height: 45vh;
+  width: 50%;
+  padding: 1%;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__texto1Tarjeta1 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: 2rem;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__texto2Tarjeta1 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: 1rem;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor2 {
+  grid-area: tarjeta2;
+  display: flex;
+  flex-direction: row;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__imagenTarjeta2 {
+  height: 45vh;
+  width: 50%;
+  padding: 1%;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__texto1Tarjeta2 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: 2rem;
+}
+.mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__texto2Tarjeta2 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: 1rem;
+}
+
+.bodyIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: white;
+}
+
+.navbar {
+  width: 100% !important;
+  padding-right: 30px !important;
+}
+
+#navbarNav {
+  justify-content: flex-end !important;
+}
+
+.navbar-nav {
+  gap: 10px !important;
+}
+
+.nav-item {
+  font-size: xx-large !important;
+  font-family: "Amiri Quran", serif !important;
+}
+
+.imagenCarousel {
+  height: 75vh !important;
+  width: 100% !important;
+}
+
+#carouselExampleCaptions {
+  height: 75vh !important;
+  width: 75% !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/*# sourceMappingURL=style.css.map */

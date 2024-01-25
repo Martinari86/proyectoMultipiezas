@@ -1,0 +1,19 @@
+{
+  "name": "proyectomultipiezas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinari86/proyectoMultipiezas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martinari86/proyectoMultipiezas/issues"
+  },
+  "homepage": "https://github.com/Martinari86/proyectoMultipiezas#readme"
+}

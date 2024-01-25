@@ -1,0 +1,11 @@
+// Body
+.bodyIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: $colorFondo;
+}

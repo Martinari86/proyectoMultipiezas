@@ -1,0 +1,10 @@
+// Estilos Footer
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: $colorFondo;
+    grid-area: footer;
+    -webkit-box-shadow: $sombra;
+    -moz-box-shadow: $sombra;
+    box-shadow: $sombra;
+}
