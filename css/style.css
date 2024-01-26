@@ -35,11 +35,24 @@
   box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
 }
 
+.bodyIndex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas: "header" "main" "footer";
+  background-color: white;
+}
+
 .mainIndex {
   grid-area: main;
   display: flex;
   flex-direction: column;
   background-color: white;
+}
+
+.mainIndex-articulo1__logoCompleto {
+  width: 50%;
+  height: 80%;
 }
 
 .mainIndex__articulo1 {
@@ -50,11 +63,10 @@
   align-items: center;
   justify-content: center;
   height: 75vh;
+  width: 100vw;
 }
-
-.mainIndex-articulo1__logoCompleto {
-  width: 50%;
-  height: 80%;
+.mainIndex__articulo1 .mainIndex-articulo1__logoCompleto {
+  width: 35%;
 }
 
 .mainIndex__articulo2 {
@@ -189,12 +201,114 @@
   font-size: 1rem;
 }
 
-.bodyIndex {
+.mainIndex__articulo5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr 100px;
-  grid-template-areas: "header" "main" "footer";
-  background-color: white;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50vh;
+  grid-template-areas: "espacio1 espacio2 espacio3";
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor1 {
+  grid-area: espacio1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__imagen {
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  z-index: 10;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__texto {
+  width: auto;
+  height: 25%;
+  font-family: "Amiri Quran", serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  z-index: 20;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor2 {
+  grid-area: espacio2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__imagen {
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  z-index: 10;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__texto {
+  width: auto;
+  height: 25%;
+  font-family: "Amiri Quran", serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  z-index: 20;
+  text-align: center;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 {
+  grid-area: espacio3;
+  display: flex;
+  flex-direction: column;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__texto {
+  width: auto;
+  height: 25%;
+  font-family: "Amiri Quran", serif;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 .mainIndex-articulo5-contenedor3-box1__imagen {
+  width: 100px;
+  height: 100px;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 .mainIndex-articulo5-contenedor3-box1__texto {
+  font-family: "Amiri Quran", serif;
+  font-size: 30px;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 .mainIndex-articulo5-contenedor3-box2__imagen {
+  width: 100px;
+  height: 100px;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 .mainIndex-articulo5-contenedor3-box2__texto {
+  font-family: "Amiri Quran", serif;
+  font-size: 30px;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box3 .mainIndex-articulo5-contenedor3-box3__imagen {
+  width: 100px;
+  height: 100px;
+}
+.mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box3 .mainIndex-articulo5-contenedor3-box3__texto {
+  font-family: "Amiri Quran", serif;
+  font-size: 30px;
 }
 
 .navbar {

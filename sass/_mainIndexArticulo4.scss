@@ -1,0 +1,57 @@
+//Estilos Articulo 4
+
+.contenedorTextos{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 1%;
+}
+
+.mainIndex__articulo4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 50vh;
+    grid-template-areas: 
+    "tarjeta1 tarjeta2";
+        .mainIndex-articulo4__contenedor1{
+            grid-area: tarjeta1;
+            display: flex;
+            flex-direction: row;
+                .mainIndex-articulo4-contenedor1__imagenTarjeta1{
+                    height: 45vh;
+                    width: 50%;
+                    padding: 1%;
+                    
+                }       
+                .mainIndex-articulo4-contenedor1__texto1Tarjeta1{
+                    font-family: $font2;
+                    font-size: 2rem;
+                }       
+                .mainIndex-articulo4-contenedor1__texto2Tarjeta1{
+                    font-family: $font2;
+                    font-size: 1rem;
+                }
+        }
+
+        .mainIndex-articulo4__contenedor2{
+            grid-area: tarjeta2;
+            display: flex;
+            flex-direction: row;        
+                .mainIndex-articulo4-contenedor2__imagenTarjeta2{
+                    height: 45vh;
+                    width: 50%;
+                    padding: 1%;
+                }       
+                .mainIndex-articulo4-contenedor2__texto1Tarjeta2{
+                    font-family: $font2;
+                    font-size: 2rem;
+                }       
+                .mainIndex-articulo4-contenedor2__texto2Tarjeta2{
+                    font-family: $font2;
+                    font-size: 1rem;
+                }          
+        }
+}
