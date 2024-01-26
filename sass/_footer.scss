@@ -2,9 +2,46 @@
 .footer{
     width: 100%;
     height: 100px;
-    background-color: $colorFondo;
+    background-color: white;
     grid-area: footer;
     -webkit-box-shadow: $sombra;
     -moz-box-shadow: $sombra;
     box-shadow: $sombra;
+        .footer__articulo{
+            display: flex;
+            flex-direction:row;
+            align-items:center; 
+            justify-content:space-evenly;
+            .footer-articulo__contenedor{
+
+                .footer-articulo-contenedor__texto1{
+                    font-family: $font2;
+                    font-size: small;
+                    font-weight: bolder;
+                }
+                .footer-articulo-contenedor__texto2{
+                    font-family: $font2;
+                    font-size: small;
+                    font-weight: bolder;
+                }
+                .footer-articulo-contenedor__texto3{
+                    font-family: $font2;
+                    font-size: small;
+                    font-weight: bolder;
+                }
+               
+
+            }
+        .footer-articulo__imagen{
+                width: 15%;
+                height: 100px;
+            }    
+
+
+       } 
+
+
+
+
 }
+

@@ -9,11 +9,7 @@
 .header {
   width: 100%;
   height: 100px;
-  background-color: white;
   grid-area: header;
-  -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-items: center;
 }
@@ -34,6 +30,31 @@
   -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75);
 }
+.footer .footer__articulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .footer__articulo .footer-articulo__contenedor .footer-articulo-contenedor__texto1 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+}
+.footer .footer__articulo .footer-articulo__contenedor .footer-articulo-contenedor__texto2 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+}
+.footer .footer__articulo .footer-articulo__contenedor .footer-articulo-contenedor__texto3 {
+  font-family: "Cairo Play", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+}
+.footer .footer__articulo .footer-articulo__imagen {
+  width: 15%;
+  height: 100px;
+}
 
 .bodyIndex {
   display: grid;
@@ -41,6 +62,7 @@
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas: "header" "main" "footer";
   background-color: white;
+  min-height: 100vh;
 }
 
 .mainIndex {
@@ -62,7 +84,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 100vh;
   width: 100vw;
 }
 .mainIndex__articulo1 .mainIndex-articulo1__logoCompleto {
@@ -141,7 +163,7 @@
 .mainIndex__articulo3 {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -161,13 +183,15 @@
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 50vh;
+  grid-template-rows: 100vh;
   grid-template-areas: "tarjeta1 tarjeta2";
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor1 {
   grid-area: tarjeta1;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__imagenTarjeta1 {
   height: 45vh;
@@ -186,6 +210,8 @@
   grid-area: tarjeta2;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__imagenTarjeta2 {
   height: 45vh;
@@ -202,8 +228,8 @@
 }
 
 .mainIndex__articulo5 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 50vh;
@@ -311,9 +337,136 @@
   font-size: 30px;
 }
 
+.mainIndex__articulo6 {
+  margin-bottom: 20vh;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__texto {
+  font: "Amiri Quran", serif;
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario {
+  width: 50%;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__etiqueta {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Amiri Quran", serif;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__input {
+  width: 550px;
+  height: 50px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__etiqueta {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Amiri Quran", serif;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__input {
+  width: 550px;
+  height: 50px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__etiqueta {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Amiri Quran", serif;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__input {
+  width: 550px;
+  height: 50px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__etiqueta {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Amiri Quran", serif;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__input {
+  width: 550px;
+  height: 50px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__etiqueta {
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Amiri Quran", serif;
+}
+.mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__input {
+  width: 550px;
+  height: 100px;
+  resize: none;
+}
+
 .navbar {
   width: 100% !important;
   padding-right: 30px !important;
+  background-color: white;
+  -webkit-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 13px 33px 0px rgba(0, 0, 0, 0.75) !important;
 }
 
 #navbarNav {

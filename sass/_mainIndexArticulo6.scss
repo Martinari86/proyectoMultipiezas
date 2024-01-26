@@ -1,0 +1,129 @@
+.mainIndex__articulo6{
+    margin-bottom: 20vh;
+            .mainIndex-articulo6__contenedor{
+                display: flex;
+                flex-direction:row;
+                align-items:center; 
+                justify-content:space-evenly;
+                    .mainIndex-articulo6-contenedor__texto{
+                        font: $font1;
+                        font-size: 2rem;
+                        width: 50%;
+                        text-align: center;
+                        margin:10px;
+                    }
+                    .mainIndex-articulo6-contenedor__contenedorFormulario{ 
+                        width: 50%;
+                            .mainIndex-articulo6-contenedor-contenedorFormulario__formulario{
+                                display: flex;
+                                flex-direction:column;
+                                align-items: flex-start; 
+                                justify-content:space-around;
+                                gap:10px;
+                                    .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1{
+                                        display: flex;
+                                        flex-direction:row;
+                                        align-items:center; 
+                                        justify-content:center;
+                                        margin:10px;
+                                        
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__etiqueta{
+                                            width: 250px;
+                                            height: 50px;
+                                            font-size: 25px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-family: $font1  
+                                        }
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__input{
+                                            width: 550px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2{
+                                        display: flex;
+                                        flex-direction:row;
+                                        align-items:center; 
+                                        justify-content:space-evenly;
+                                        margin:10px;
+                                        
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__etiqueta{
+                                            width: 250px;
+                                            height: 50px;
+                                            font-size: 25px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-family: $font1
+                                        }
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__input{
+                                            width: 550px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3{
+                                        display: flex;
+                                        flex-direction:row;
+                                        align-items:center; 
+                                        justify-content:space-evenly;
+                                        margin:10px;
+                                        
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__etiqueta{
+                                            width: 250px;
+                                            height: 50px;
+                                            font-size: 25px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-family: $font1
+                                        }
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__input{
+                                            width: 550px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4{
+                                        display: flex;
+                                        flex-direction:row;
+                                        align-items:center; 
+                                        justify-content:space-evenly;
+                                        margin:10px;
+                                        
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__etiqueta{
+                                            width: 250px;
+                                            height: 50px;
+                                            font-size: 25px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-family: $font1   
+                                        }
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__input{
+                                            width: 550px;
+                                            height: 50px;
+                                        }
+                                    }
+                                    .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5{
+                                        display: flex;
+                                        flex-direction:row;
+                                        align-items:center; 
+                                        justify-content:space-evenly;
+                                        margin:10px;
+                                        
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__etiqueta{
+                                            width: 250px;
+                                            height: 50px;
+                                            font-size: 25px;
+                                            text-align: center;
+                                            justify-content: center;
+                                            font-family: $font1
+                                        }
+                                        .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__input{
+                                            width: 550px;
+                                            height: 100px;
+                                            resize:none;
+                                            
+                                        }
+                                    }
+                                }
+                        
+                        }
+                    }
+    }

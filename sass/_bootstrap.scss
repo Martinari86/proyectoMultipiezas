@@ -1,9 +1,14 @@
 // Modificaciones BOOTSTRAP
 
 //Extender barra de navegación al ancho y alinearlo hacia la derecha
+//Estilos bootstrap de HEADER
 .navbar{
     width: 100% !important;
     padding-right: 30px !important;
+    background-color: white;
+    -webkit-box-shadow: $sombra !important;
+    -moz-box-shadow: $sombra !important;
+    box-shadow: $sombra !important;
 }
 #navbarNav{
     justify-content: flex-end !important;
@@ -18,6 +23,7 @@
     font-family: $font1 !important;
 }
 
+//Estilos bootstrap de CAROUESEL
 .imagenCarousel{
     height: 75vh !important;
     width: 100% !important;

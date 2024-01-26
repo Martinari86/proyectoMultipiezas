@@ -2,11 +2,7 @@
 .header{
     width: 100%;
     height: 100px;
-    background-color: $colorFondo;
     grid-area: header;
-    -webkit-box-shadow: $sombra;
-    -moz-box-shadow: $sombra;
-    box-shadow: $sombra;
     display: flex;
     justify-items: center;
 }
