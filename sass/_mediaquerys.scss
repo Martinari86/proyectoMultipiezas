@@ -3,11 +3,11 @@
 
 //MQ Articulo 1    
     .mainIndex__articulo1{
-        height: 30vh;
+        height: 100vh;
         width: 100vw;
             .mainIndex-articulo1__logoCompleto{
-                width: 50px;
-                height: 50px;
+                height: 20%;
+                width: 60%;
             }
     }
 
@@ -16,6 +16,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(2,50vw);
     grid-template-rows: repeat(4,1fr);
@@ -180,36 +181,37 @@
     margin-top: 10px;
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 50vh;
-    grid-template-rows: repeat(3,1fr);
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,33vh);
     grid-template-areas: 
     "espacio1" 
     "espacio2" 
     "espacio3";
-    width: 100vw;
         .mainIndex-articulo5__contenedor1{
             grid-area: espacio1;
             display: flex;
             flex-direction:column;
             align-items:center; 
-            justify-content:flex-start;
-            width: 100vw;
+            justify-content:center;  
+            width: auto;
+            width: 1fr;
+            height: auto;
                 .mainIndex-articulo5-contenedor1__imagen{
-                    width: 50%;
-                    height: 50%;
-                    border-radius: 100%;   
-                    z-index: 10;
+                    width: 70%;
+                    height: 70%;
+                    border-radius: 100%;
+                    justify-content: center;   
                 }
                 .mainIndex-articulo5-contenedor1__texto{
-                    width: 100vw;
-                    height: 25%;
+                    width: auto;
+                    height: auto;
                     text-align: center;
+                    margin-top: 10px;
                     font-family: $font1;
                     font-weight: bold;
                     color: black;
-                    font-size: 1rem;
-                    z-index: 20;
-                    
+                    font-size: 15px;      
                 
                 }
             }
@@ -218,39 +220,46 @@
             display: flex;
             flex-direction:column;
             align-items:center; 
-            justify-content:flex-start;   
-            width: 100vw;
+            justify-content:center;  
+            width: auto;
+            width: 1fr;
+            height: auto;
                 .mainIndex-articulo5-contenedor2__imagen{
-                    width: 50%;
-                    height: 50%; 
-                    border-radius: 100%;  
-                    z-index: 10;
+                    width: 70%;
+                    height: 70%;
+                    border-radius: 100%;
+                    justify-content: center;   
                 }
                 .mainIndex-articulo5-contenedor2__texto{
-                    width: 100vw;
-                    height: 25%;
+                    width: auto;
+                    height: auto;
+                    text-align: center;
+                    margin-top: 10px;
                     font-family: $font1;
-                    text-align: center;
                     font-weight: bold;
-                    color: black; 
-                    font-size: 1rem;
-                    z-index: 20;
-                    text-align: center;
+                    color: black;
+                    font-size: 15px;   
+
                 }
             }
             .mainIndex-articulo5__contenedor3{
             grid-area: espacio3;
             display: flex;
-            flex-direction: column;   
-            width: 100vw;  
+            flex-direction:column;
+            align-items:center; 
+            justify-content:center;  
+            width: auto;
+            width: 1fr;
+            height: auto;
                 .mainIndex-articulo5-contenedor3__texto{
-                    width: 100vw;
-                    height: 25%;
+                    width: auto;
+                    height: auto;
+                    text-align: center;
+                    margin-top: 10px;
                     font-family: $font1;
                     font-weight: bold;
-                    color: black; 
-                    font-size: 1rem;
-                    text-align: center;
+                    color: black;
+                    font-size: 15px;  
                 }
                 .mainIndex-articulo5-contenedor3__box1{
                     display: flex;
@@ -264,7 +273,9 @@
                         }
                         .mainIndex-articulo5-contenedor3-box1__texto{
                             font-family: $font1;
-                            font-size: 1rem;
+                            font-size: 15px;
+                            align-items:center; 
+                            justify-content:center; 
                         }
                     }
                     .mainIndex-articulo5-contenedor3__box2{
@@ -278,7 +289,7 @@
                         }
                         .mainIndex-articulo5-contenedor3-box2__texto{
                             font-family: $font1;
-                            font-size: 1rem;
+                            font-size: 15px;
                         }
                 }
                     .mainIndex-articulo5-contenedor3__box3{
@@ -292,19 +303,19 @@
                         }
                         .mainIndex-articulo5-contenedor3-box3__texto{
                             font-family: $font1;
-                            font-size: 1rem;
+                            font-size: 15px;
                         }
                 }
                 
             }
 }
-
 //MQ Aritculo 6
 
 .mainIndex__articulo6{
     margin-top: 10vh;
     margin-bottom: 20vh;
     width: 100vw;
+    height: 50vh;
             .mainIndex-articulo6__contenedor{
                 display: flex;
                 flex-direction:column;
@@ -314,7 +325,7 @@
                     .mainIndex-articulo6-contenedor__texto{
                         font: $font1;
                         font-size: 1rem;
-                        width: 100vw;
+                        width: 100%;
                         text-align: center;
                         margin:10px;
                     }
@@ -548,12 +559,12 @@
 //Estilos bootstrap de CAROUESEL
 .imagenCarousel{
     height: 25vh !important;
-    width: 100vw !important;
+    width: 100% !important;
 }
 
 #carouselExampleCaptions{
     height: 25vh !important;
-    width: 100vw !important;
+    width: 100% !important;
 }
 
 .carousel-control-prev,
@@ -585,4 +596,4 @@
 
 
 
-//@media (min-width:711px) and (max-width:1000px){
+//@media (min-width:711px) and (max-width:1000px){  

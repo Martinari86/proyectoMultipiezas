@@ -58,7 +58,7 @@
 
 .bodyIndex {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 100px 1fr 100px;
   grid-template-areas: "header" "main" "footer";
   background-color: white;
@@ -79,7 +79,6 @@
 
 .mainIndex__articulo1 {
   margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,20 +92,18 @@
 }
 
 .mainIndex__articulo2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  height: 50vh;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: repeat(2, 25vh);
   justify-items: center;
   align-items: center;
   grid-template-areas: "imagen1 texto2 imagen3 texto4" "texto1 imagen2 texto3 imagen4";
 }
 .mainIndex__articulo2 .mainIndex-articulo2__imagen1 {
   grid-area: imagen1;
-  width: 100%;
-  height: auto;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__texto1 {
   grid-area: texto1;
@@ -116,13 +113,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: auto;
-  height: auto;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__imagen2 {
   grid-area: imagen2;
-  width: 100%;
-  height: auto;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__texto2 {
   grid-area: texto2;
@@ -133,11 +130,13 @@
   justify-content: center;
   margin: 5%;
   text-align: center;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__imagen3 {
   grid-area: imagen3;
-  width: 100%;
-  height: auto;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__texto3 {
   grid-area: texto3;
@@ -148,11 +147,13 @@
   justify-content: center;
   margin: 5%;
   text-align: center;
+  width: 25vw;
+  height: 25vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__imagen4 {
   grid-area: imagen4;
-  width: 100%;
-  height: auto;
+  width: 25vw;
+  height: 15vh;
 }
 .mainIndex__articulo2 .mainIndex-articulo2__texto4 {
   grid-area: texto4;
@@ -163,13 +164,15 @@
   justify-content: center;
   margin: 5%;
   text-align: center;
+  width: 25vw;
+  height: 25vh;
 }
 
 .mainIndex__articulo3 {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 100vh;
-  width: 100%;
+  height: 50vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,21 +189,25 @@
 .mainIndex__articulo4 {
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100vw;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 100vh;
-  grid-template-areas: "tarjeta1 tarjeta2";
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "tarjeta1" "tarjeta2";
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor1 {
   grid-area: tarjeta1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__imagenTarjeta1 {
-  height: 45vh;
-  width: 50%;
+  height: 35vh;
+  width: 40%;
+  max-width: 400px;
+  max-height: 400px;
   padding: 1%;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor1 .mainIndex-articulo4-contenedor1__texto1Tarjeta1 {
@@ -214,13 +221,15 @@
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor2 {
   grid-area: tarjeta2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__imagenTarjeta2 {
-  height: 45vh;
-  width: 50%;
+  height: 35vh;
+  width: 40%;
+  max-width: 400px;
+  max-height: 400px;
   padding: 1%;
 }
 .mainIndex__articulo4 .mainIndex-articulo4__contenedor2 .mainIndex-articulo4-contenedor2__texto1Tarjeta2 {
@@ -235,69 +244,80 @@
 .mainIndex__articulo5 {
   margin-top: 10px;
   margin-bottom: 10px;
+  height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50vh;
-  grid-template-areas: "espacio1 espacio2 espacio3";
+  place-content: center;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: repeat(2, 50vh);
+  grid-template-areas: "espacio1 espacio2" "espacio3 espacio3";
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 {
   grid-area: espacio1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__imagen {
-  width: 75%;
-  height: 75%;
+  width: 70%;
+  height: 25vh;
   border-radius: 100%;
-  z-index: 10;
+  justify-content: center;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__texto {
-  width: auto;
+  width: 100%;
   height: 25%;
+  text-align: center;
   font-family: "Amiri Quran", serif;
   font-weight: bold;
   color: black;
   font-size: 40px;
-  z-index: 20;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 {
   grid-area: espacio2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__imagen {
-  width: 75%;
-  height: 75%;
+  width: 70%;
+  height: 25vh;
   border-radius: 100%;
-  z-index: 10;
+  justify-content: center;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__texto {
   width: auto;
   height: 25%;
+  text-align: center;
   font-family: "Amiri Quran", serif;
   font-weight: bold;
   color: black;
   font-size: 40px;
   z-index: 20;
-  text-align: center;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 {
   grid-area: espacio3;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 50vh;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__texto {
-  width: auto;
-  height: 25%;
   font-family: "Amiri Quran", serif;
+  text-align: center;
   font-weight: bold;
   color: black;
   font-size: 40px;
-  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 {
   display: flex;
@@ -312,6 +332,8 @@
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 .mainIndex-articulo5-contenedor3-box1__texto {
   font-family: "Amiri Quran", serif;
   font-size: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 {
   display: flex;
@@ -343,40 +365,49 @@
 }
 
 .mainIndex__articulo6 {
+  margin-top: 20vh;
   margin-bottom: 20vh;
+  height: 60vh;
+  width: 100vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor {
   display: flex;
+  height: 60vh;
+  width: 100vw;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__texto {
   font: "Amiri Quran", serif;
   font-size: 2rem;
-  width: 50%;
+  width: 30vw;
   text-align: center;
-  margin: 10px;
+  align-items: center;
+  margin: 20px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario {
-  width: 50%;
+  width: 30vw;
+  height: 50vh;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+  width: 30vw;
   gap: 10px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 10px;
+  width: 20vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__etiqueta {
-  width: 250px;
+  width: 20vw;
   height: 50px;
   font-size: 25px;
   text-align: center;
@@ -384,7 +415,7 @@
   font-family: "Amiri Quran", serif;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__input {
-  width: 50px;
+  width: 20vw;
   height: 50px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 {
@@ -393,9 +424,10 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 10px;
+  width: 20vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__etiqueta {
-  width: 250px;
+  width: 20vw;
   height: 50px;
   font-size: 25px;
   text-align: center;
@@ -403,7 +435,7 @@
   font-family: "Amiri Quran", serif;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada2 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__input {
-  width: 50px;
+  width: 20vw;
   height: 50px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 {
@@ -412,9 +444,10 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 10px;
+  width: 20vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__etiqueta {
-  width: 250px;
+  width: 20vw;
   height: 50px;
   font-size: 25px;
   text-align: center;
@@ -422,7 +455,7 @@
   font-family: "Amiri Quran", serif;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada3 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__input {
-  width: 50px;
+  width: 20vw;
   height: 50px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 {
@@ -431,9 +464,10 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 10px;
+  width: 20vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__etiqueta {
-  width: 250px;
+  width: 20vw;
   height: 50px;
   font-size: 25px;
   text-align: center;
@@ -441,7 +475,7 @@
   font-family: "Amiri Quran", serif;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada4 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__input {
-  width: 50px;
+  width: 20vw;
   height: 50px;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 {
@@ -450,9 +484,10 @@
   align-items: center;
   justify-content: space-evenly;
   margin: 10px;
+  width: 20vw;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__etiqueta {
-  width: 250px;
+  width: 20vw;
   height: 50px;
   font-size: 25px;
   text-align: center;
@@ -460,7 +495,7 @@
   font-family: "Amiri Quran", serif;
 }
 .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__contenedorFormulario .mainIndex-articulo6-contenedor-contenedorFormulario__formulario .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada5 .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__input {
-  width: 50px;
+  width: 20vw;
   height: 100px;
   resize: none;
 }
@@ -488,13 +523,13 @@
 }
 
 .imagenCarousel {
-  height: 75vh !important;
-  width: 100% !important;
+  height: 40vh !important;
+  width: 60vw !important;
 }
 
 #carouselExampleCaptions {
-  height: 75vh !important;
-  width: 75% !important;
+  height: 40vh !important;
+  width: 60vw !important;
 }
 
 .carousel-control-prev-icon {
@@ -507,17 +542,18 @@
 
 @media (max-width: 710px) {
   .mainIndex__articulo1 {
-    height: 30vh;
+    height: 100vh;
     width: 100vw;
   }
   .mainIndex__articulo1 .mainIndex-articulo1__logoCompleto {
-    width: 50px;
-    height: 50px;
+    height: 20%;
+    width: 60%;
   }
   .mainIndex__articulo2 {
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(2, 50vw);
     grid-template-rows: repeat(4, 1fr);
@@ -659,74 +695,81 @@
     margin-top: 10px;
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 50vh;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33vh);
     grid-template-areas: "espacio1" "espacio2" "espacio3";
-    width: 100vw;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 {
     grid-area: espacio1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 100vw;
+    justify-content: center;
+    width: auto;
+    width: 1fr;
+    height: auto;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__imagen {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border-radius: 100%;
-    z-index: 10;
+    justify-content: center;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor1 .mainIndex-articulo5-contenedor1__texto {
-    width: 100vw;
-    height: 25%;
+    width: auto;
+    height: auto;
     text-align: center;
+    margin-top: 10px;
     font-family: "Amiri Quran", serif;
     font-weight: bold;
     color: black;
-    font-size: 1rem;
-    z-index: 20;
+    font-size: 15px;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 {
     grid-area: espacio2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    width: 100vw;
+    justify-content: center;
+    width: auto;
+    width: 1fr;
+    height: auto;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__imagen {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
     border-radius: 100%;
-    z-index: 10;
+    justify-content: center;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor2 .mainIndex-articulo5-contenedor2__texto {
-    width: 100vw;
-    height: 25%;
-    font-family: "Amiri Quran", serif;
+    width: auto;
+    height: auto;
     text-align: center;
+    margin-top: 10px;
+    font-family: "Amiri Quran", serif;
     font-weight: bold;
     color: black;
-    font-size: 1rem;
-    z-index: 20;
-    text-align: center;
+    font-size: 15px;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 {
     grid-area: espacio3;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    width: 1fr;
+    height: auto;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__texto {
-    width: 100vw;
-    height: 25%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
     font-family: "Amiri Quran", serif;
     font-weight: bold;
     color: black;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 15px;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 {
     display: flex;
@@ -740,7 +783,9 @@
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box1 .mainIndex-articulo5-contenedor3-box1__texto {
     font-family: "Amiri Quran", serif;
-    font-size: 1rem;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 {
     display: flex;
@@ -754,7 +799,7 @@
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box2 .mainIndex-articulo5-contenedor3-box2__texto {
     font-family: "Amiri Quran", serif;
-    font-size: 1rem;
+    font-size: 15px;
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box3 {
     display: flex;
@@ -768,12 +813,13 @@
   }
   .mainIndex__articulo5 .mainIndex-articulo5__contenedor3 .mainIndex-articulo5-contenedor3__box3 .mainIndex-articulo5-contenedor3-box3__texto {
     font-family: "Amiri Quran", serif;
-    font-size: 1rem;
+    font-size: 15px;
   }
   .mainIndex__articulo6 {
     margin-top: 10vh;
     margin-bottom: 20vh;
     width: 100vw;
+    height: 50vh;
   }
   .mainIndex__articulo6 .mainIndex-articulo6__contenedor {
     display: flex;
@@ -785,7 +831,7 @@
   .mainIndex__articulo6 .mainIndex-articulo6__contenedor .mainIndex-articulo6-contenedor__texto {
     font: "Amiri Quran", serif;
     font-size: 1rem;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin: 10px;
   }
@@ -981,11 +1027,11 @@
   }
   .imagenCarousel {
     height: 25vh !important;
-    width: 100vw !important;
+    width: 100% !important;
   }
   #carouselExampleCaptions {
     height: 25vh !important;
-    width: 100vw !important;
+    width: 100% !important;
   }
   .carousel-control-prev,
   .carousel-control-next {

@@ -1,34 +1,42 @@
 .mainIndex__articulo6{
+    margin-top: 20vh;
     margin-bottom: 20vh;
+    height: 60vh;
+    width: 100vw;
             .mainIndex-articulo6__contenedor{
                 display: flex;
+                height: 60vh;
+                width: 100vw;
                 flex-direction:row;
                 align-items:center; 
-                justify-content:space-evenly;
+                justify-content:space-around;
                     .mainIndex-articulo6-contenedor__texto{
                         font: $font1;
                         font-size: 2rem;
-                        width: 50%;
+                        width: 30vw;
                         text-align: center;
-                        margin:10px;
+                        align-items:center; 
+                        margin:20px;
                     }
                     .mainIndex-articulo6-contenedor__contenedorFormulario{ 
-                        width: 50%;
+                        width: 30vw;
+                        height: 50vh;
                             .mainIndex-articulo6-contenedor-contenedorFormulario__formulario{
                                 display: flex;
                                 flex-direction:column;
                                 align-items: flex-start; 
                                 justify-content:space-around;
+                                width: 30vw;
                                 gap:10px;
                                     .mainIndex-articulo6-contenedor-contenedorFormulario-formulario__entrada1{
                                         display: flex;
                                         flex-direction:row;
                                         align-items:center; 
-                                        justify-content:center;
+                                        justify-content:space-evenly;
                                         margin:10px;
-                                        
+                                        width: 20vw;
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__etiqueta{
-                                            width: 250px;
+                                            width: 20vw;
                                             height: 50px;
                                             font-size: 25px;
                                             text-align: center;
@@ -36,7 +44,7 @@
                                             font-family: $font1  
                                         }
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada1__input{
-                                            width: 50px;
+                                            width: 20vw;
                                             height: 50px;
                                         }
                                     }
@@ -46,9 +54,10 @@
                                         align-items:center; 
                                         justify-content:space-evenly;
                                         margin:10px;
+                                        width: 20vw;
                                         
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__etiqueta{
-                                            width: 250px;
+                                            width: 20vw;
                                             height: 50px;
                                             font-size: 25px;
                                             text-align: center;
@@ -56,7 +65,7 @@
                                             font-family: $font1
                                         }
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada2__input{
-                                            width: 50px;
+                                            width: 20vw;
                                             height: 50px;
                                         }
                                     }
@@ -66,9 +75,9 @@
                                         align-items:center; 
                                         justify-content:space-evenly;
                                         margin:10px;
-                                        
+                                        width: 20vw;
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__etiqueta{
-                                            width: 250px;
+                                            width: 20vw;
                                             height: 50px;
                                             font-size: 25px;
                                             text-align: center;
@@ -76,7 +85,7 @@
                                             font-family: $font1
                                         }
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada3__input{
-                                            width: 50px;
+                                            width: 20vw;
                                             height: 50px;
                                         }
                                     }
@@ -86,9 +95,9 @@
                                         align-items:center; 
                                         justify-content:space-evenly;
                                         margin:10px;
-                                        
+                                        width: 20vw;
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__etiqueta{
-                                            width: 250px;
+                                            width: 20vw;
                                             height: 50px;
                                             font-size: 25px;
                                             text-align: center;
@@ -96,7 +105,7 @@
                                             font-family: $font1   
                                         }
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada4__input{
-                                            width: 50px;
+                                            width: 20vw;
                                             height: 50px;
                                         }
                                     }
@@ -106,9 +115,9 @@
                                         align-items:center; 
                                         justify-content:space-evenly;
                                         margin:10px;
-                                        
+                                        width: 20vw;
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__etiqueta{
-                                            width: 250px;
+                                            width: 20vw;
                                             height: 50px;
                                             font-size: 25px;
                                             text-align: center;
@@ -116,7 +125,7 @@
                                             font-family: $font1
                                         }
                                         .mainIndex-articulo6-contenedor-contenedorFormulario-formulario-entrada5__input{
-                                            width: 50px;
+                                            width: 20vw;
                                             height: 100px;
                                             resize:none;
                                             

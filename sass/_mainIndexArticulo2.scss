@@ -1,12 +1,11 @@
 //Estilos Articulo 2
 
 .mainIndex__articulo2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    height: 50vh;
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: repeat(2,25vh);
     justify-items: center;
     align-items: center;
     grid-template-areas: 
@@ -14,8 +13,8 @@
     "texto1 imagen2 texto3 imagen4";
         .mainIndex-articulo2__imagen1{
             grid-area: imagen1;
-            width: 100%;
-            height: auto;
+            width: 25vw;
+            height: 25vh;
           
         } 
         .mainIndex-articulo2__texto1{
@@ -26,15 +25,15 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: auto;
-            height: auto;
+            width: 25vw;
+            height: 25vh;
             
             
         } 
         .mainIndex-articulo2__imagen2{
             grid-area: imagen2;
-            width: 100%;
-            height: auto;
+            width: 25vw;
+            height: 25vh;
             
         } 
         .mainIndex-articulo2__texto2{
@@ -46,11 +45,13 @@
             justify-content: center;
             margin: 5%;
             text-align: center;
+            width: 25vw;
+            height: 25vh;
         } 
         .mainIndex-articulo2__imagen3{
             grid-area: imagen3;
-            width: 100%;
-            height: auto;
+            width: 25vw;
+            height: 25vh;
             
         } 
         .mainIndex-articulo2__texto3{
@@ -62,12 +63,14 @@
             justify-content: center;
             margin: 5%;
             text-align: center;
+            width: 25vw;
+            height: 25vh;
             
         } 
         .mainIndex-articulo2__imagen4{
             grid-area: imagen4;
-            width: 100%;
-            height: auto;
+            width: 25vw;
+            height: 15vh;
                        
         } 
         .mainIndex-articulo2__texto4{
@@ -79,6 +82,8 @@
             justify-content: center;
             margin: 5%;
             text-align: center;
+            width: 25vw;
+            height: 25vh;
         }  
 
 

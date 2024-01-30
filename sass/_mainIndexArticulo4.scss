@@ -11,20 +11,25 @@
 .mainIndex__articulo4{
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100vh;
+    grid-template-columns: 100vw ;
+    grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
-    "tarjeta1 tarjeta2";
+    "tarjeta1"
+    "tarjeta2";
         .mainIndex-articulo4__contenedor1{
             grid-area: tarjeta1;
             display: flex;
-            flex-direction: row;
+            flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
                 .mainIndex-articulo4-contenedor1__imagenTarjeta1{
-                    height: 45vh;
-                    width: 50%;
+                    height: 35vh;
+                    width: 40%;
+                    max-width: 400px;
+                    max-height: 400px;
                     padding: 1%;                    
                 }       
                 .mainIndex-articulo4-contenedor1__texto1Tarjeta1{
@@ -40,12 +45,14 @@
         .mainIndex-articulo4__contenedor2{
             grid-area: tarjeta2;
             display: flex;
-            flex-direction: row;
+            flex-direction: column-reverse;
             align-items: center;
             justify-content: center; 
                 .mainIndex-articulo4-contenedor2__imagenTarjeta2{
-                    height: 45vh;
-                    width: 50%;
+                    height: 35vh;
+                    width: 40%;
+                    max-width: 400px;
+                    max-height: 400px;
                     padding: 1%;
                 }       
                 .mainIndex-articulo4-contenedor2__texto1Tarjeta2{
